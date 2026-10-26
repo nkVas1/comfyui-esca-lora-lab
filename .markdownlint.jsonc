@@ -1,0 +1,10 @@
+// House style for Markdown in this repository (markdownlint / markdownlint-cli2).
+{
+  "default": true,
+  // Prose is wrapped by hand; tables and links make long lines unavoidable.
+  "MD013": false,
+  // Keep a Changelog repeats "Added" / "Changed" under every version.
+  "MD024": { "siblings_only": true },
+  // Compact table separators (|---|---|) are the house style.
+  "MD060": false
+}
