@@ -14,6 +14,8 @@ ESCA LoRA Lab adds what large libraries need on top of it:
 | **Reversible reorganisation** | Optional: moves LoRAs into `<scope>/flux2/klein/<purpose>/`, `flux2/dev/<purpose>/`, `flux1/`, `sdxl/`, `sd15/`… through LoRA Manager (sidecars and previews move with the model), rewrites LoRA paths inside your workflow JSON files with backups, and keeps a journal for a one-call rollback |
 | **Preview studio** | Uniform example images for every LoRA, rendered on *your* model with identical scenes and seeds (sliders in both directions). Starts only when you press **Start**; pause / resume / stop; the SQLite queue survives restarts; a job's key is the LoRA's SHA-256, so planning twice never duplicates work and moving files never loses it. Polite mode yields the GPU to your own prompts |
 
+![The ESCA LoRA Lab panel in the ComfyUI sidebar: purpose facets, the "compatible with the model" filter, a guard warning about a Flux.1 LoRA in a Klein 9B graph, and LoRA cards with trigger words](docs/panel.png)
+
 ## Requirements
 
 - ComfyUI with the new frontend (tested on ComfyUI 0.11 / frontend 1.37) and the sidebar API.
