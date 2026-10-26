@@ -1,0 +1,23 @@
+[project]
+name = "comfyui-esca-lora-lab"
+version = "0.1.0"
+description = "LoRA library built into ComfyUI on top of LoRA Manager: tensor-true architecture, purpose taxonomy, compatibility guard, reversible reorganisation and an idempotent preview studio."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "nkVas1" }]
+dependencies = ["aiohttp", "Pillow"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.urls]
+Repository = "https://github.com/nkVas1/comfyui-esca-lora-lab"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
